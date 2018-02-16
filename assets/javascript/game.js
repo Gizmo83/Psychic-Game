@@ -26,6 +26,7 @@ document.onkeyup = function(event) {
         // clears guessesSoFar
         guessesSoFar.length = 0;
         //console.log("win" + wins)
+        alert(userGuess + " is Correct!")
     }
     // guessesLeft = 0 increment losses and reset guessesLeft and guessesSoFar
     else if (guessesLeft === 0) {
@@ -35,6 +36,7 @@ document.onkeyup = function(event) {
         // clears guessesSoFar
         guessesSoFar.length = 0;
         //console.log("loss" + losses)
+        alert("No more guesses left. Try again!")
     }
     // userGuess doesn't match computerGuess decrease guessesLeft by 1
     else if (userGuess !== computerGuess) {
